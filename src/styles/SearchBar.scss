@@ -1,0 +1,31 @@
+.form {
+  position: relative;
+  height: 40px;
+  &_input {
+    border-radius: 5px;
+    padding-left: 40px;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+  &_button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    padding: 9px 8px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .form {
+    &_input {
+      font-size: 12px;
+    }
+  }
+}

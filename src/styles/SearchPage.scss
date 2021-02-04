@@ -1,0 +1,30 @@
+.searchPage {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  background-image: url("../components//images/background.jpg");
+  justify-content: center;
+  align-items: center;
+  &_box {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    &-title {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    &-description {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &-bar {
+      margin: 24px 0;
+    }
+    &-trends {
+      font-size: 18px;
+    }
+  }
+}
