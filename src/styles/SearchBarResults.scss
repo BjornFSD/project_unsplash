@@ -1,29 +1,24 @@
-.popup {
+.searchBarHints {
   margin-top: 0.5rem;
   background-color: white;
   border-radius: 5px;
-}
+  &_item {
+    padding: 5px 0 5px 40px;
+    color: black;
+    font-size: 18px;
+    &:hover {
+      background-color: #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
 
-.popup_item {
-  padding: 5px 0 5px 40px;
-  color: black;
-  border-bottom: 1px solid #aaa;
-  font-size: 18px;
-}
-.popup_item:hover {
-  background-color: #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.warning {
-  padding: 5px 0 5px 40px;
-  color: black;
-  font-size: 14px;
+  &_warn {
+    padding: 5px 0 5px 40px;
+    color: black;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-  .popup_item {
-    font-size: 12px;
-  }
 }

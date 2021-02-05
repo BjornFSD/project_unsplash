@@ -9,12 +9,12 @@ function SearchBarResults({ items, isQueryOpen, setQuery, setItems, history }) {
 
   if (!isQueryOpen) return null;
   return (
-    <div className="popup">
+    <div className="searchBarHints">
       {items.map((item, index) => {
         return (
           <div
             onClick={() => handleSubmit(item.title)}
-            className="popup_item"
+            className="searchBarHints_item"
             key={index}
           >
             {/* {console.log(item.title)} */}
@@ -23,7 +23,9 @@ function SearchBarResults({ items, isQueryOpen, setQuery, setItems, history }) {
           </div>
         );
       })}
-      {items.length < 1 && <div className="warning">Nothing Found</div>}
+      {items.length < 1 && (
+        <div className="searchBarHints_warn">Nothing Found</div>
+      )}
     </div>
   );
 }

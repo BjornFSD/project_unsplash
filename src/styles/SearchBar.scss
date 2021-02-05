@@ -1,6 +1,7 @@
 .form {
   position: relative;
   height: 40px;
+  width: 100%;
   &_input {
     border-radius: 5px;
     padding-left: 40px;
@@ -19,13 +20,12 @@
     &:hover {
       cursor: pointer;
     }
+
+    &:focus {
+      outline: 0;
+    }
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .form {
-    &_input {
-      font-size: 12px;
-    }
-  }
 }

@@ -1,6 +1,7 @@
-import React, { createRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Search from "../functions/SearchBar";
+import Modal from "../functions/Modal";
 
 function ResultPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,21 @@ function ResultPage() {
     return apiRequest();
   }, [searched]);
 
+  const showImages = results.map((img) => {
+    return (
+      <img
+        onClick={() => {
+          handleClick(img);
+        }}
+        className="resultPage_main-box--img"
+        id={img.id}
+        src={img.urls.small}
+        alt=""
+        key={img.id}
+      />
+    );
+  });
+
   return (
     <div className="resultPage">
       <div className="resultPage_nav">
@@ -42,22 +58,14 @@ function ResultPage() {
         </div>
       </div>
       <div className="resultPage_main">
-        <div className="resultPage_main-box">
-          {results.map((img) => {
-            return (
-              <img
-                onClick={() => {
-                  handleClick(img);
-                }}
-                className="resultPage_main-box--img"
-                id={img.id}
-                src={img.urls.small}
-                alt="img"
-                key={img.id}
-              />
-            );
-          })}
-        </div>
+        <p className="resultPage_main-title">{searched}</p>
+        <div className="resultPage_main-box">{showImages}</div>
+        <Modal
+          setSelectedImage={setSelectedImage}
+          selectedImage={selectedImage}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
       </div>
     </div>
   );

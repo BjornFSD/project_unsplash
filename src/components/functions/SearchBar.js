@@ -25,7 +25,7 @@ function SearchBar() {
 
   useEffect(() => {
     const Key = `HlL5_dbbZ4d-auuSDjttLYgLR5xy6TBrZwl-oHSF7xg`;
-    const SearchQuerry = `https://api.unsplash.com/search/collections?per_page=20&query=${query}&client_id=${Key}`;
+    const SearchQuerry = `https://api.unsplash.com/search/collections?per_page=10&query=${query}&client_id=${Key}`;
 
     fetch(SearchQuerry)
       .then((response) => response.json())
@@ -86,11 +86,9 @@ function SearchBar() {
         type="text"
         placeholder="Search free high-resolution photos"
       />
-      <button
-        onClick={handleSubmit}
-        className="form_button"
-        type="submit"
-      ></button>
+      <button onClick={handleSubmit} className="form_button" type="submit">
+        <img src="../images/loupe.png" alt="" />
+      </button>
       <SearchBarResults
         isQueryOpen={isQueryOpen}
         items={items}
