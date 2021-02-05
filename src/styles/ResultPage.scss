@@ -12,7 +12,7 @@
       display: flex;
       font-size: 44px;
       font-weight: bold;
-      margin-bottom: 30px;
+      margin: auto 0;
 
       a {
         text-decoration: none;
@@ -58,5 +58,171 @@
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .resultPage {
+    &_nav {
+      margin: 40px 100px 0 100px;
+      &-logo {
+        font-size: 40px;
+        margin: auto 0;
+      }
+      &-searchBar {
+        margin: 10px auto;
+        width: 800px;
+      }
+    }
+    &_main {
+      &-title {
+        margin: 20px 100px;
+        font-size: 26px;
+      }
+      &-box {
+        width: 1280px;
+        &--img {
+          height: 22vh;
+          margin: 7px;
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1024px) {
+  .resultPage {
+    &_nav {
+      margin: 40px 80px 0 80px;
+      &-logo {
+        font-size: 36px;
+        margin: auto 0;
+      }
+      &-searchBar {
+        margin: 10px auto;
+        width: 560px;
+      }
+    }
+    &_main {
+      &-title {
+        margin: 20px 100px;
+        font-size: 24px;
+      }
+      &-box {
+        width: 880px;
+        &--img {
+          height: 19vh;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .resultPage {
+    &_nav {
+      margin: 40px 80px 0 80px;
+      &-logo {
+        font-size: 30px;
+        margin: auto 0;
+      }
+      &-searchBar {
+        margin: 10px auto;
+        width: 420px;
+      }
+    }
+    &_main {
+      &-title {
+        margin: 20px 100px;
+        font-size: 24px;
+      }
+      &-box {
+        width: 680px;
+        &--img {
+          height: 18vh;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .resultPage {
+    &_nav {
+      margin: 30px 20px 0 20px;
+      &-logo {
+        font-size: 24px;
+        margin: auto 0;
+      }
+      &-searchBar {
+        margin: 10px auto;
+        width: 220px;
+      }
+    }
+    &_main {
+      &-title {
+        margin: 20px 30px;
+        font-size: 20px;
+      }
+      &-box {
+        width: 380px;
+        &--img {
+          height: 16vh;
+          margin: 3px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .resultPage {
+    &_nav {
+      margin: 30px 20px 0 20px;
+      &-logo {
+        font-size: 22px;
+        margin: auto 0;
+      }
+      &-searchBar {
+        margin: 10px auto;
+        width: 200px;
+      }
+    }
+    &_main {
+      &-title {
+        margin: 20px 30px;
+        font-size: 18px;
+      }
+      &-box {
+        width: 340px;
+        &--img {
+          height: 15vh;
+          margin: 3px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .resultPage {
+    &_nav {
+      margin: 30px 20px 0 20px;
+      &-logo {
+        font-size: 20px;
+        margin: auto 0;
+      }
+      &-searchBar {
+        margin: 10px auto;
+        width: 160px;
+      }
+    }
+    &_main {
+      &-title {
+        margin: 20px 30px;
+        font-size: 16px;
+      }
+      &-box {
+        width: 290px;
+        &--img {
+          height: 15vh;
+          margin: 2px;
+        }
+      }
+    }
+  }
 }

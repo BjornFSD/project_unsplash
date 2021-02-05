@@ -16,9 +16,55 @@
   &_warn {
     padding: 5px 0 5px 40px;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
+  .searchBarHints {
+    &_item {
+      padding: 5px 0 5px 30px;
+      font-size: 14px;
+    }
+    &_warn {
+      padding: 5px 0 5px 30px;
+      font-size: 14px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .searchBarHints {
+    &_item {
+      padding: 5px 0 5px 30px;
+      font-size: 12px;
+    }
+    &_warn {
+      padding: 5px 0 5px 30px;
+      font-size: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .searchBarHints {
+    &_item {
+      padding: 5px 0 5px 20px;
+      font-size: 10px;
+    }
+    &_warn {
+      padding: 5px 0 5px 20px;
+      font-size: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .searchBarHints {
+    &_item {
+      padding: 5px 0 5px 20px;
+      font-size: 8px;
+    }
+    &_warn {
+      padding: 5px 0 5px 20px;
+      font-size: 8px;
+    }
+  }
 }

@@ -13,10 +13,10 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 8px;
     transform: translateY(-50%);
-    padding: 9px 8px;
+    padding: 8px 8px;
     &:hover {
       cursor: pointer;
     }
@@ -27,5 +27,68 @@
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .form {
+    height: 40px;
+    &_input {
+      font-size: 18px;
+    }
+    &_button {
+      left: 8px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+  .form {
+    height: 38px;
+    &_input {
+      font-size: 16px;
+      height: 38px;
+    }
+    &_button {
+      top: 50%;
+      left: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    height: 32px;
+    &_input {
+      font-size: 14px;
+      height: 32px;
+    }
+    &_button {
+      top: 50%;
+      left: 8px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .form {
+    height: 28px;
+    &_input {
+      font-size: 12px;
+      height: 28px;
+    }
+    &_button {
+      top: 50%;
+      left: 8px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .form {
+    height: 28px;
+    &_input {
+      font-size: 10px;
+      height: 28px;
+    }
+    &_button {
+      top: 50%;
+      left: 8px;
+    }
+  }
 }
